@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherApp</title>
+    <script src="https://use.fontawesome.com/3ae9040299.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="main-screen">
+        <div id="logo">Keep a Weather Eye</div>
+
+        <div id="search-box">
+          <div class="input">
+            <input
+              type="text"
+              name="search-input"
+              id="search-input"
+              placeholder="Your city here"
+            />
+            <button id="search-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </div>
+          <small id="error" style="display: none;">Remember where I live</small> 
+        </div>
+      </div>
+
+      <div id="result-screen" style="display: none">
+        <div id="result-content">
+            <button id="return-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                </svg>
+              </svg>
+            </button>
+          <div id="result-summary">
+            <div class="summary-item">
+              <div id="temp">49°</div>
+              <div id="place">London, GB</div>
+              <button id="convert-units-btn">℉</button>
+            </div>
+            <div id="" class="summary-item">
+                <div id="weather">Clear Skies</div>
+                <div id="weather-desc">Clear Skies</div>
+            </div>
+          </div>
+          <div id="weather-details">
+            <div class="details-item">
+              <h2>Feels like</h2>
+              <p id="feeling">29832</p>
+            </div>
+            <div class="details-item">
+              <h2>Humidity</h2>
+              <p id="humidity">29832</p>
+            </div>
+            <div class="details-item">
+              <h2>Min temp</h2>
+              <p id="mintemp">29832</p>
+            </div>
+            <div class="details-item">
+              <h2>Max temp</h2>
+              <p id="maxtemp">29832</p>
+            </div>
+            <div class="details-item">
+                <h2>Wind speed</h2>
+                <p id="wind-speed">29832</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Weather API courtesy of <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>.</p>
+      <p>Copyright © 2022 apullo777 
+        <a href="https://github.com/apullo777" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </p>
+    </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
