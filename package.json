@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "web app to display weather forcast data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apullo777/weather-app.git"
+  },
+  "author": "apullo777",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apullo777/weather-app/issues"
+  },
+  "homepage": "https://github.com/apullo777/weather-app#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "lodash": "^4.17.21"
+  }
+}
